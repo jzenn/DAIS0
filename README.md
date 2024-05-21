@@ -12,10 +12,7 @@
 ## About The Project
 This is the official GitHub repository for our work [Differentiable Annealed Importance Sampling Minimizes The Jensen-Shannon Divergence Between Initial and Target Distribution](TODO) where we investigate the initial distribution of differentiable annealed importance sampling (DAIS) for inference.
 
-> Differentiable annealed importance sampling (DAIS), proposed by Geffner & Domke (2021) and Zhang et al. (2023), allows optimizing, among others, over the initial distribution of AIS.
-In this paper, we show that, in the limit of many transitions, DAIS minimizes the symmetrized KL divergence (Jensen-Shannon divergence) between the initial and target distribution.
-Thus, DAIS can be seen as a form of variational inference (VI) in that its initial distribution is a parametric fit to an intractable target distribution. 
-> In experiments on synthetic and real-world data, we observe that the initial distribution learned by DAIS often provides more accurate uncertainty estimates than standard VI (optimizing the reverse KL divergence), importance weighted VI, and Markovian score climbing (optimizing the forward KL divergence).
+>Differentiable annealed importance sampling (DAIS), proposed by Geffner & Domke (2021) and Zhang et al. (2023), allows optimizing, among others, over the initial distribution of AIS. In this paper, we show that, in the limit of many transitions, DAIS minimizes the symmetrized KL divergence (Jensen-Shannon divergence) between the initial and target distribution. Thus, DAIS can be seen as a form of variational inference (VI) in that its initial distribution is a parametric fit to an intractable target distribution. In experiments on synthetic and real-world data, we observe that the initial distribution learned by DAIS often provides more accurate uncertainty estimates than standard VI (optimizing the reverse KL divergence), importance weighted VI, and Markovian score climbing (optimizing the forward KL divergence).
 
 The code base was heavily extended and rewritten based on the DAIS code base by Zhang et al. (2021) which was taken from their [OpenReview submission](https://openreview.net/forum?id=6rqjgrL7Lq).
 The baseline for Markovian Score Climbing (Naesseth et al., 2020) was taken from the [original repository](https://github.com/blei-lab/markovian-score-climbing/tree/main). 
